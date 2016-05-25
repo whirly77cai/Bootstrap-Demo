@@ -1,19 +1,61 @@
 <!doctype html>
 <html class="no-js" lang="">
     <head>
-        <meta charset="utf-8">
+        
         <meta http-equiv="x-ua-compatible" content="ie=edge"><!--告诉IE使用最新版的渲染引擎-->
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href='http://fonts.useso.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.useso.com/css?family=Niconne' rel='stylesheet' type='text/css'>
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <!--<link rel="stylesheet" href="css/normalize.css">-->
+        <link rel="stylesheet" href="css/_main.css">
+        <!-- Modernizr -->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <!-- Respond.js for IE 8 or less only -->
+        <!-- [if (lt IE 9) & (!IEMobile)]>
+         <script src="js/vendor/respond.js"></script>
+        <![endif]-->
     </head>
+    <style type="text/css">
+        *{margin: 0;padding: 0;}
+        header{
+            background: url(img/banner.jpg) ;
+            background-size: cover;
+            -webkit-background-size: cover;
+            
+            width: 100%;
+        }
+        nav.navbar div.navbar-right a{
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            
+        }
+        .facebook a{
+            background: url(img/img-sprite.png) no-repeat -6px -6px;
+        }
+        .twitter a{
+            background: url(img/img-sprite.png) no-repeat -48px -6px;
+        }
+        .google a{
+            background: url(img/img-sprite.png) no-repeat -90px -6px;
+        }
+        a.navbar-brand{
+            font-size: 28px;
+        }
+        
+        .bannerinfo a{
+            color: #fff;
+            font-family: 'Niconne', cursive;
+            text-decoration: none;
+        }
+       
+    </style>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -21,23 +63,35 @@
 
         <!-- Add your site or application content here -->
         <header role="banner">
-            <nav role="navigation">
-                <div class="container">
+            <div class="container">
+                <nav role="navigation" class="navbar navbar-static-top navbar-default">
                     <div class="navbar-header">
-                        <a href="index.html" class="navbar-brand">PROJECT NAME</a>
+                        <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="index.html" class="navbar-brand"><span class="icon fa fa-home" ></span></a>
                     </div>
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">GALLERY</a></li>
-                        <li><a href="#">NEWS</a></li>
-                        <li><a href="#">TYPO</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                        <li><a href="#">f</a></li>
-                        <li><a href="#">t</a></li>
-                        <li><a href="#">g+</a></li>
-                    </ul>
-                </div>
-            </nav>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#" >ABOUT</a></li>
+                            <li><a href="#" >GALLERY</a></li>
+                            <li><a href="#" >NEWS</a></li>
+                            <li><a href="#" >TYPO</a></li>
+                            <li><a href="#" >CONTACT</a></li>
+                        </ul>
+                        <div>
+                            <div class="navbar-right google"><a href="#" class="navbar-link"></a></div>
+                            <div class="navbar-right twitter"><a href="#" class="navbar-link"></a></div>
+                            <div class="navbar-right facebook"><a href="#" class="navbar-link"></a></div>
+                        </div>
+                    </div>    
+                </nav>
+                <section class="text-center bannerinfo">
+                    <h1><a href="index.html">Gardening</a></h1>
+                </section>
+            </div>
         </header>
 
         <main role="main">
@@ -48,7 +102,7 @@
             <p><small>Copyright &copy; Company Name</small></p>
         </footer>
 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.2.1.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
